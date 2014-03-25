@@ -308,7 +308,11 @@ class Baxter_Controller:
         Resets booleans when user is done with action
         """
         print "\n**Booleans reset**\n"
-        #self.img_switch.change_mode('bool_reset',3)
+        self.img_switch.change_mode('bool_reset',3)
+
+        #
+        # +++++++ MOVE RJ TO DISABLE POSITION HERE ++++++
+        #
 
         #Why do we disable, reset, and enable when resetting user stuff?
         self.rs.disable()
